@@ -41,7 +41,7 @@ angular.module('todo',['ui.bootstrap','angular-slideout-panel'])
 	}
     }]).factory('ListService',function(){
 	// service for list
-	var list=[{text:'jfkdsjf',description:'jfdksjfk'}];
+	var list=[];
 	return {
 	    // function to get list
 	    getList:function(){
