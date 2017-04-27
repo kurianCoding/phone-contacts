@@ -1,29 +1,21 @@
-<div class="container">    
-            
-    <div id="signupbox" style=" margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8">
-        <div class="panel panel-info">
-            <div class="panel-heading">
-		<button ng-click="closePanel()" class="btn btn-primary pull-right">Close</button>
-		<button ng-click="dismissPanel()" class="btn btn-primary pull-right">Dismiss</button>
-            </div>  
-            <div class="panel-body" >
-                <form>
-                    <form  class="form-horizontal" method="post" >
+<div class="container">
 
-                        <div id="text" class="form-group required">
+<button ng-click="closePanel()" class="btn btn-primary">Close</button>
+<button ng-click="dismissPanel()" class="btn btn-primary pull-right">Dismiss</button>
+    </div>
+    <div class="portlet-body form">
+                    <form  role="form" >
+
                             <label for="text" class="control-label col-md-4  requiredField"> Title<span class="asteriskField">*</span> </label>
 
-                            <div class="controls col-md-8 ">
-                                <input ng-model="text" class="input-md  textinput textInput form-control" id="text" maxlength="30" name="text" placeholder="Enter title" style="margin-bottom: 10px" type="text" />
+                            <div class="form-group form-md-line-input ">
+                                <input ng-model="text" class="form-control" id="text" maxlength="30" name="text" placeholder="Enter title" style="margin-bottom: 10px" type="text" />
                             </div>
 
-                        </div>
-			
-                        <div id="description" class="form-group required">
+			    
+                          <label for="description" class="control-label col-md-4  requiredField"> Description<span class="asteriskField">*</span> </label>
 
-                            <label for="description" class="control-label col-md-4  requiredField"> Description<span class="asteriskField">*</span> </label>
-
-                            <div class="controls col-md-8 ">
+                            <div class="form-group col-md-8 ">
                                 <textarea ng-model="description" class="input-md  textinput textInput form-control" id="description" maxlength="30" name="description" placeholder="Enter the description" style="margin-bottom: 10px" type="text" />
                             </div>
 
@@ -32,10 +24,6 @@
 			<div class="form-group">
 			<button ng-click="addItem()" class="btn btn-primary" type="submit">Add</button> 
 			</div>
-                    </form>
 
                 </form>
-            </div>
-        </div>
-    </div> 
 </div>

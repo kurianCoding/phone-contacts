@@ -41,6 +41,7 @@ angular.module('todo',['ui.bootstrap','angular-slideout-panel'])
 	}
     }]).factory('ListService',function(){
 	// service for list
+	// list has been initialized here
 	var list=[];
 	return {
 	    // function to get list
@@ -53,7 +54,6 @@ angular.module('todo',['ui.bootstrap','angular-slideout-panel'])
 	    },
 	    // function to add items ot the list
 	    addItem:function(Item){
-		console.log(Item);
 		list.push({text:Item.text,description:Item.description});
 	    },
 	}
