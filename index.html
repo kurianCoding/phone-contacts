@@ -18,13 +18,23 @@
 
 <body>
     <div ng-controller="TodoController">
-        <span>{{remainingItems()}} of {{list.length}} remaining</span>
-
-        <ul class="unstyled">
-            <li ng-repeat="todo in list">{{todo.text}}</li>
-        </ul>
-
+	<div class="col-lg-8">
+	     <table class="table table-striped">
+		<thead>
+		    <th>title</th>
+		    <th>description</th>
+		</thead>
+		<tbody>
+		    <tr ng-repeat="todo in list">
+			<td>{{todo.text}}</td>
+			<td>{{todo.description}}</td>
+		    </tr>
+		</tbody>
+	    </table>
+	</div>
+<div class="col-lg-8">
  <button type="button" class="btn btn-primary" ng-click="openModal('custom-modal')">NewEntery</button>
+</div>
 	    <!--Angular-->
 	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" type="text/javascript"></script>
 
